@@ -12,29 +12,6 @@ header {
   height: 100%;
   align-items: center;
 
-  // .brand-logo {
-  //   font-family: sofiapro-light;
-  //   font-style: normal;
-  //   font-weight: bold;
-  //   font-size: 28px;
-
-  //   position: relative;
-  //   z-index: 2;
-  //   color: #ffffff;
-    
-  //   &:after {
-  //     content: '';
-  //     width: 37px;
-  //     height: 48px;
-  //     display: block;
-  //     background-color: #7820A0;
-  //     position: absolute;
-  //     z-index: -1;
-  //     bottom: -1px;
-  //     left: -9px;
-  //   }
-  // }
-
   .brand-logo {
     height: 100%;
     margin-bottom: 12px;
@@ -42,8 +19,6 @@ header {
     width: 37px;
     background-color: #7820A0;
     position: relative;
-    // display: flex;
-    // align-items: center;
 
     p {
       font-family: sofiapro-light;
@@ -103,8 +78,6 @@ header {
     font-weight: bold;
     font-size: 14px;
     line-height: 120%;
-    /* Grey 5 */
-
     color: #463D4A;
   }
 
