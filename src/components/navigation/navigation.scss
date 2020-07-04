@@ -4,6 +4,8 @@ header {
   height: 60px;
   align-items: center;
   position: relative;
+  margin-left: 11%;
+  margin-right: 11%;
 }
 
 .brand {
@@ -21,7 +23,7 @@ header {
     position: relative;
 
     p {
-      font-family: sofiapro-light;
+      // font-family: Sofia Pro Regular;
       font-style: normal;
       font-weight: bold;
       font-size: 28px;
@@ -35,7 +37,7 @@ header {
   }
 
   .brand-name {
-    font-family: sofiapro-light;
+    // font-family: Sofia Pro Regular;
     font-style: normal;
     font-weight: 900;
     font-size: 29.66px;
@@ -98,10 +100,16 @@ header {
   }
 }
 
+// @media only screen and (min-width: 1700px) {
+//   header {
+//     margin-left: 11%;
+//     margin-right: 11%;
+//   }
+// }
 
-@media only screen and (min-width: 1440px) {
-  header {
-    padding-left: 11%;
-    padding-right: 11%;
-  }
-}
+// @media only screen and (max-width: 1700px) {
+//   header {
+//     margin-left: 11%;
+//     margin-right: 11%;
+//   }
+// }

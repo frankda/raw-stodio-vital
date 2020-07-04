@@ -1,11 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   min-height: 100vh;
-  box-sizing: border-box;
+  max-width: 1440px;
+  margin: auto;
+}
+
+::selection {
+  color: #FFFFFF;
+  background: #7820A0;
 }
 
 a {
   text-decoration: none;
   color: #463D4A;
+  cursor: pointer;
 }
 
 button {
