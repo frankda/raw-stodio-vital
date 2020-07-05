@@ -1,0 +1,111 @@
+.practitioners-section {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.practitioners-container {
+  min-height: 772px;
+  display: flex;
+  margin-left: 5.4%;
+  margin-right: 5.4%;
+  flex-direction: column;
+  align-items: center;
+
+  .section-icon {
+    margin-top: 49px;
+  }
+
+  .practitioners-title {
+    margin-top: 32px;
+    width: 479px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 120%;
+    text-align: center;
+    color: #21082D;
+  }
+
+  nav {
+    height: 35px;
+    margin-top: 31px;
+    display: flex;
+
+    input {
+      display: none;
+
+      &:checked + label {
+        background-color: rgb(241, 233, 245);
+
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 130%;
+        color: #7820A0;
+      }
+    }
+
+    label {
+      display: flex;
+      padding: 0 20px;
+      cursor: pointer;
+      border-radius: 4px;
+      height: 100%;
+      align-items: center;
+
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 130%;
+      color: #463D4A;
+    }
+  }
+
+  .practitioners-presentation {
+    margin-top: 112px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+
+  .img-button {
+    cursor: pointer;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .presentation-board {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 21px;
+  }
+
+  .view-all {
+    width: 96px;
+    height: 43px;
+    margin-top: 49px;
+    background: #E8E4EA;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 120%;
+    color: #463D4A;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .practitioners-card:nth-child(3) {
+    display: none;
+  }
+
+  .practitioners-card:nth-child(4) {
+    display: none;
+  }
+}

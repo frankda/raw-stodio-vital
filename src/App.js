@@ -4,6 +4,7 @@ import Navigation from './components/navigation/navigation';
 import './fonts/Sofia Pro Regular.ttf';
 import LandingSection from './components/landingSection/landingSection';
 import HowVitalWorkSection from './components/how-vital-work/howVitalWorkSection';
+import PractitionersSection from './components/practitioners/practitioners';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <main>
         <LandingSection />
         <HowVitalWorkSection />
+        <PractitionersSection />
       </main>
     </div>
   );
