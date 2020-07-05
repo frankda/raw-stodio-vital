@@ -3,6 +3,7 @@ import './App.css';
 import Navigation from './components/navigation/navigation';
 import './fonts/Sofia Pro Regular.ttf';
 import LandingSection from './components/landingSection/landingSection';
+import HowVitalWorkSection from './components/how-vital-work/howVitalWorkSection';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navigation />
       <main>
         <LandingSection />
+        <HowVitalWorkSection />
       </main>
     </div>
   );
