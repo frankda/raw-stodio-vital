@@ -12,6 +12,13 @@
   background: #7820A0;
 }
 
+hr {
+  display: block;
+  border-width: 0;
+  border-bottom: 1px solid #E8E4EA;
+  margin: 0;
+}
+
 a {
   text-decoration: none;
   color: #463D4A;

@@ -56,7 +56,7 @@ const PractitionersSection = () => {
           {practitionersTypes.map((practitioner, i) => {
             return (
               <React.Fragment key={i}>
-                {practitioner == 'All'
+                {practitioner === 'All'
                 ? <React.Fragment>
                     <input type="radio" name='practitioner' id={practitioner + '-radio'} defaultChecked />
                     <label htmlFor={practitioner + '-radio'}>{practitioner}</label>
