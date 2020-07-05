@@ -80,7 +80,7 @@
   
   .presentation-board {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
     margin: 0 21px;
   }
@@ -106,6 +106,12 @@
   }
 
   .practitioners-card:nth-child(4) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .practitioners-card:nth-child(2) {
     display: none;
   }
 }
