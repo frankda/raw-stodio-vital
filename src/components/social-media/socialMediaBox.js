@@ -10,6 +10,7 @@ export default () => {
       {
         name: 'Google',
         logo: GoogleIcon,
+        logoLink: 'https://goo.gl/maps/xAZsXm1Cw5r3STEY8',
         stars: 5,
         score: 4.9,
         reviews: 325,
@@ -18,6 +19,7 @@ export default () => {
       {
         name: 'Facebook',
         logo: FacebookIcon,
+        logoLink: 'https://www.facebook.com/www.vital.ly',
         stars: 5,
         score: 4.9,
         reviews: 325,
@@ -35,7 +37,7 @@ export default () => {
         <React.Fragment>
             {keys.map((key) => {
               return (
-                <img key={key} src={StarIcon} />
+                <img key={key} src={StarIcon} alt="√" />
               )
             } )}
         </React.Fragment>
@@ -46,19 +48,25 @@ export default () => {
     <div className="social-media-box">
       {mediaPlatforms.map((media, i) => {
         return (
-          <div key={i} className="media">
-            <img src={media.logo} alt={media.name} className="logo"/>
-            <div className="stars">
-              {renderStar(media.stars)}
+          <React.Fragment key={i}>
+            <div key={i} className="media">
+              <a target="_blank" rel="noopener noreferrer" href={media.logoLink}><img src={media.logo} alt={media.name} className="logo" /></a>
+              <div className="review-box">
+                <div className="stars">
+                  {renderStar(media.stars)}
+                </div>
+                <div className="reviews">
+                  <a href={media.reviewLink}>
+                    <p className="score">{media.score}</p>
+                    <p>&nbsp;{'- ' + media.reviews}&nbsp;</p>
+                    <p className="light-review-text">reviews</p>
+                  </a>
+                </div>
+              </div>
+
             </div>
-            <div className="reviews">
-              <a href={media.reviewLink}>
-                <p className="score">{media.score}</p>
-                <p> - {media.reviews} </p>
-                <p className="light-review-text">reviews</p>
-              </a>
-            </div>
-          </div>
+            <div className="media-divider"></div>
+          </React.Fragment>
         )
       })}
     </div>

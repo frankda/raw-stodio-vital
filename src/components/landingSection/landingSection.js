@@ -2,7 +2,6 @@ import React from 'react';
 import './landingSection.scss';
 import './searchIcon';
 import SearchIcon from './searchIcon';
-// import SideImg from './sideImg.js';
 import SideImg from './landingSection.svg';
 import SocialMediaBox from '../social-media/socialMediaBox';
 
@@ -26,12 +25,11 @@ const LandingSection = () => {
           </div>
           <button type="submit">Search pratitioners</button>
           </form>
-        <a className="supplementary">Become a Practitioner</a>
+        <a href="/" className="supplementary">Become a Practitioner</a>
       </div>
 
       <div className="img-part">
-        {/* <SideImg width={635} height={448} /> */}
-        <img src={SideImg} />
+        <img src={SideImg} alt="Start a chat!" />
       </div>
 
       <div className="social-media">

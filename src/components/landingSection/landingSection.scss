@@ -1,5 +1,5 @@
 .landing-section {
-  height: 558px;
+  min-height: 558px;
   display: flex;
   position: relative;
   margin-left: 11%;
@@ -121,21 +121,19 @@
       width: 100%;
     }
   }
+
+  .social-media {
+    z-index: 10;
+  }
 }
 
-// @media only screen and (min-width: 1700px) {
-//   .landing-section {
-//     margin-left: 11%;
-//     margin-right: 11%;
-//   }
-// }
-
-// @media only screen and (max-width: 1700px) {
-//   .landing-section {
-//     margin-left: 11%;
-//     margin-right: 11%;
-//   }
-// }
+@media only screen and (min-width: 1054px) {
+  .social-media {
+    position: absolute;
+    bottom: 87px;
+    right: 16px;
+  }
+}
 
 @media only screen and (max-width: 1329px) {
   .search-part > .title {
@@ -155,5 +153,9 @@
   .img-part {
     width: 100% !important;
     margin: 20px 0 0 0 !important;
+  }
+
+  .social-media {
+    margin-top: -76px;
   }
 }
