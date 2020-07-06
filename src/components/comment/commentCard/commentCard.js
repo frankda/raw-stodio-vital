@@ -1,6 +1,6 @@
 import React from 'react';
-import StarIcon from './star.svg';
-import './practitionerCard.scss';
+import './commentCard.scss';
+import StarIcon from './Mask.svg';
 
 export default (props) => {
   const renderStar = (num) => {
@@ -20,16 +20,15 @@ export default (props) => {
   }
 
   return (
-    <div className="card">
-      <img src={props.image} alt=""/>
-      <div className="card-information">
-        <p className="card-title">{props.name}</p>
-        <p className="card-description">{props.type}</p>
-        <div className="card-rate">
+    <div className="comment-card">
+      <img className="comment-photo" src={props.image} alt=""/>
+      <div className="comment-information">
+        <div className="comment-rate">
           {renderStar(props.rate)}
         </div>
+        <p className="comment-name">{props.name}</p>
+        <p className="comment-content">{props.comment}</p>
       </div>
-      <button>Book now</button>
     </div>
   )
 }
