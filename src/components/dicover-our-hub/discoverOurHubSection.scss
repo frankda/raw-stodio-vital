@@ -1,0 +1,66 @@
+.discover-our-hub-section {
+  max-width: 1440px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.discover-our-hub-container {
+  min-height: 853px;
+  margin-left: 10.3%;
+  margin-right: 10.3%;
+  margin-top: 118px;
+}
+
+.discover-our-hub-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  align-items: center;
+
+  .discover-our-hub-header__title {
+    display: flex;
+
+    .text-block {
+      margin-left: 25px;
+
+      .header__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 120%;
+        color: #21082D;
+      }
+
+      .header__description {
+        margin-top: 7px;
+
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 140%;
+        color: #847D88;
+      }
+    }
+  }
+
+  .discover-our-hub-header__button {
+    width: 96px;
+    height: 43px;
+    background: #E8E4EA;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 120%;
+    color: #463D4A;
+  }
+}
+
+.discover-our-hub-blog {
+  width: 1240px;
+  margin-top: 83px;
+  display: flex;
+  overflow: hidden;
+}
