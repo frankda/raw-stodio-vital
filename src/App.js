@@ -6,6 +6,7 @@ import LandingSection from './components/landingSection/landingSection';
 import HowVitalWorkSection from './components/how-vital-work/howVitalWorkSection';
 import PractitionersSection from './components/practitioners/practitioners';
 import Comments from './components/comment/comments';
+import DiscoverOurHub from './components/dicover-our-hub/discoverOurHubSection';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <PractitionersSection />
         <hr />
         <Comments />
+        <DiscoverOurHub />
       </main>
     </div>
   );
