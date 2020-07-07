@@ -2,13 +2,35 @@ header {
   height: 60px;
   max-width: 1440px;
   margin: auto;
+  background-color: #FFFFFF;
+}
+
+.navigation-bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 500;
+}
+
+.navigation-bar--scroll-up {
+  position: fixed;
+  transform: translateY(0);
+  transition: 0.2s;
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.15);
+}
+
+.navigation-bar--scroll-down {
+  position: absolute;
+  transform: translateY(-100%);
+  //transition: 0.5s;
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.15);
 }
 
 .brand-container {
   display: flex;
   height: 100%;
   align-items: center;
-  position: relative;
   margin-left: 10%;
   margin-right: 11.6%;
 }
