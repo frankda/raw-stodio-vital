@@ -7,6 +7,8 @@ import HowVitalWorkSection from './components/how-vital-work/howVitalWorkSection
 import PractitionersSection from './components/practitioners/practitioners';
 import Comments from './components/comment/comments';
 import DiscoverOurHub from './components/dicover-our-hub/discoverOurHubSection';
+import Footer from './components/footer/footer';
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
         <Comments />
         <DiscoverOurHub />
       </main>
+      <Footer />
     </div>
   );
 }
