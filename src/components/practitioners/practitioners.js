@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './practitioners.scss';
 import StartIcon from './icon/practitioners.svg';
 import LeftArrow from './icon/leftArrow.svg';
@@ -9,15 +9,7 @@ import NathanPhoto from './img/nathan.png';
 import BrookPhoto from './img/brook.png';
 
 const PractitionersSection = () => {
-  const practitionersTypes = [
-    'All',
-    'Naturopath',
-    'Chiropracter',
-    'Nutritionist',
-    'Physiotherapist'
-  ]
-
-  const practitioners = [
+  const [practitioners, setPractitioners] = useState([
     {
       image: EmmaPhoto,
       name: 'Emma Zappia Chiropractor',
@@ -42,7 +34,44 @@ const PractitionersSection = () => {
       type: 'Chiropracter',
       rate: 5
     }
+  ])
+
+  // useEffect(() => {
+  // }, [practitioners])
+
+  const practitionersTypes = [
+    'All',
+    'Naturopath',
+    'Chiropracter',
+    'Nutritionist',
+    'Physiotherapist'
   ]
+
+  const shiftLeft = (arr) => {
+    const leftShifted = Array.from(arr);
+    let firstElement = leftShifted.shift();
+    leftShifted.push(firstElement);
+    setPractitioners(leftShifted);
+  }
+
+  const shiftRight = (arr) => {
+    const rightShifted = Array.from(arr);
+    let lastElement = rightShifted.pop();
+    rightShifted.unshift(lastElement);
+    setPractitioners(rightShifted);
+  }
+
+  const renderCard = () => {
+    return (
+      <React.Fragment>
+        {practitioners.map((practitioner, i) => {
+          return (<div key={i}  className="practitioners-card">
+            <PractitionerCard image={practitioner.image} name={practitioner.name} type={practitioner.type} rate={practitioner.rate} />
+          </div>)
+        })}
+      </React.Fragment>
+    )
+  }
 
   return (
     <div className="practitioners-section">
@@ -73,17 +102,11 @@ const PractitionersSection = () => {
 
         <div className="practitioners-presentation">
 
-          <img className="img-button" src={LeftArrow} alt=""/>
+          <img className="img-button" src={LeftArrow} onClick={() => shiftLeft(practitioners)} alt=""/>
           <div className="presentation-board">
-            {practitioners.map((practitioner, i) => {
-              return (
-                <div key={i}  className="practitioners-card">
-                  <PractitionerCard image={practitioner.image} name={practitioner.name} type={practitioner.type} rate={practitioner.rate} />
-                </div>
-              )
-            })}
+            {renderCard()}
           </div>
-          <img className="img-button" src={RightArrow} alt=""/>
+          <img className="img-button" src={RightArrow} onClick={() => shiftRight(practitioners)} alt=""/>
 
         </div>
 
