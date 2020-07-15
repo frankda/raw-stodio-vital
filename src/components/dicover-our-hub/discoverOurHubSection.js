@@ -1,4 +1,6 @@
 import React from 'react';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import './discoverOurHubSection.scss';
 import CreamIcon from './icon/cream.svg';
 import BlogCard from './blogCard/blogCard';
@@ -8,8 +10,6 @@ import BannerPhoto from './img/big.png';
 import Slider from 'react-slick';
 // import './slicker.scss';
 // import './slickerTheme.scss';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 export const DiscoverOurHub = () => {
   const cardInfo = {
@@ -44,12 +44,14 @@ export const DiscoverOurHub = () => {
        </div>
 
        <div className="discover-our-hub-blog">
+        <Slider {...settings}>
           <BlogCard cardInfo={cardInfo} />
           <BlogCard cardInfo={cardInfo} />
           <BlogCard cardInfo={cardInfo} />
           <BlogCard cardInfo={cardInfo} />
+        </Slider>
        </div>
-       <Slider {...settings}>
+       {/* <Slider {...settings}>
           <div>
             <h3>1</h3>
           </div>
@@ -68,7 +70,7 @@ export const DiscoverOurHub = () => {
           <div>
             <h3>6</h3>
           </div>
-        </Slider>
+        </Slider> */}
      </div>
     </div>
   )

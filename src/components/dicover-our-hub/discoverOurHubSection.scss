@@ -62,6 +62,8 @@
 .discover-our-hub-blog {
   width: 1240px;
   margin-top: 83px;
-  display: flex;
-  // overflow-x: auto;
+}
+
+.slick-arrow {
+  display: none !important;
 }
